@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Data 
+*.csv
+*.json
+*.parquet
+*.pkl
+*.h5
+*.hdf5
+
+# Models
+*.pt
+*.pth
+*.bin
+*.onnx
+checkpoints/
+*.h5
+
+# Configs (если содержат секреты)
+*.yaml
+!configs/template.yaml
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Logs
+logs/
+*.log
+
+# Virtual Environment
+venv/
+.env/

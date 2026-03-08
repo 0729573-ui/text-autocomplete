@@ -1,0 +1,45 @@
+# Настройки данных
+data:
+  raw_path: "data/raw_dataset.csv"
+  processed_path: "data/dataset_processed.csv"
+  train_path: "data/train.csv"
+  val_path: "data/val.csv"
+  test_path: "data/test.csv"
+  max_length: 128
+  min_freq: 2
+
+# Настройки модели LSTM
+lstm:
+  vocab_size: 10000
+  embedding_dim: 256
+  hidden_dim: 512
+  num_layers: 2
+  dropout: 0.3
+  bidirectional: false
+
+# Настройки трансформера (для HuggingFace)
+transformer:
+  model_name: "distilgpt2"
+  max_length: 128
+  temperature: 0.7
+  top_k: 50
+  top_p: 0.95
+
+# Настройки обучения
+training:
+  batch_size: 32
+  learning_rate: 0.001
+  epochs: 10
+  device: "cuda"  # или "cpu"
+  seed: 42
+  gradient_clip: 1.0
+  save_best: true
+  checkpoint_dir: "models/checkpoints"
+
+# Настройки логирования
+logging:
+  log_interval: 100
+  eval_interval: 500
+  save_interval: 1000
+  wandb_project: "text-autocomplete"
+  wandb_entity: "your-username"
